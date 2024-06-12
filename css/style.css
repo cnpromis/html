@@ -1,0 +1,588 @@
+/* 所有网页的整体框架 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    background-color: black;
+}
+
+/** 让四个盒子都采用左浮动的浮动布局,并且占满浏览器,消除内边距对整个盒子大小的影响**/
+.header,.nav,.content,.footer{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/** 页眉区 **/
+.header{
+    padding: 10px;
+    background-color: rgb(48, 48, 47);
+}
+
+.logo{
+    float:left;
+    width:45%;
+    text-align: right;
+}
+
+.title{
+    width: 40%;
+    float: left;
+    padding: 0 18px;
+    margin: 0px;
+    color: rgb(210, 31, 61);
+}
+
+.titles{
+    width: 35%;
+    float: left;
+    padding: 0 40px;
+    margin: 0px;
+    color: rgb(210, 31, 61);
+}
+/** 页眉区结束 **/
+
+/**导航区**/
+.logos{
+    position: absolute;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(19, 1, 5);
+}
+
+/***对导航区使用flex弹性布局，居中***/
+#menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+#menu li{
+    list-style: none;
+    margin: 0 6%;
+}
+
+/*** 消除下划线 ***/
+#menu li a{
+    color: rgb(17, 147, 240);
+    text-decoration: none;
+}
+
+#menu li a:hover{
+    color: rgb(244, 43, 8);
+}
+/**导航区结束**/
+
+/** 页脚区，居中 **/
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+}
+/** 页脚区结束 **/
+/* 所有网页整体框架结束 */
+
+/* 主页内容区 */
+.content{
+    background-image: url("../image/主页背景.png");
+    background-size: 110%;
+    width: 100%;
+}
+
+#content_inner{
+    text-align: center;
+    padding: 23% ;
+    color: white;
+}
+
+.motto{
+    font-size: 20px;
+}
+/*主页内容区结束*/
+
+/* 个人简历内容区 */ 
+.content1{
+    box-sizing: border-box;
+    background-image: url("../image/个人简历背景.png");
+    width: 100%;
+}
+
+.content1 h2{
+    text-align: center;
+    padding:80px 0 10px 0 ;
+}
+
+/** 将表格居中 **/
+table{
+    background-color: rgba(245, 245, 245, 0.4);
+    text-align: center;
+    margin: 0 auto ;
+}
+
+/** 定义每个单元格的高度 **/
+th,td{
+    text-align: center;
+    height: 40px;
+}
+/* 个人简历内容区结束 */
+
+/* 我的爱好内容区 */
+.content2{
+    box-sizing: border-box;
+    width: 100%;
+    height: 800px;
+    background: rgb(9, 43, 0) url("../image/我的爱好背景.png") no-repeat center ;
+    background-size: 100%;
+}
+
+.title2{
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.242);
+}
+
+.title2 h1,h6{
+    padding: 5px;   
+}
+
+/** 将anime_list盒子分成六份，都采用flex弹性布局,超出部分隐藏 **/
+.anime_list{
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(181, 196, 10, 0.692);
+    margin: 10px 120px;
+    height: 500px;
+    border: 1 solid black;
+}
+
+
+.anime1{
+    text-align: center;
+    height:500px;
+    width: 40%;
+    border: 1px solid black;
+}
+
+.anime1 h1{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.anime1 p{
+    padding: 5px 15px;
+    text-align:left;
+}
+
+.anime23{
+    text-align: center;
+    width: 30%;
+    height: 500px;
+}
+
+.anime2{
+    height: 250px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+.anime3{
+    height: 250px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.anime45{
+    text-align: center;
+    width: 30%;
+    height: 500px;
+}
+
+.anime4{
+    height: 250px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.anime5{
+    height: 250px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.recent_watching_list{
+    width: 30%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.recent_watching_list h2{
+    padding:20px 0 0 20px;
+}
+
+.r_w_list{
+    padding:5px 0  5px  10px ;
+}
+
+.r_w_list p{
+    padding: 30px 0 0 0;
+}
+
+/** 消除下划线 **/
+.r_w_list p a{
+    color: black;
+    text-decoration: none;
+}
+
+.r_w_list p a:hover{
+    color: rgb(5, 98, 247);
+}
+/* 我的爱好内容区结束 */
+
+/* 我的照片内容区 */
+/** 参加漫展 **/
+.content3_inner{
+    box-sizing: border-box;
+    padding: 80px 0 0 0;
+    width: 100%;
+    background: black url("../image/我的照片背景.jpg") no-repeat center;
+}
+
+.content3 h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.photos1{
+    overflow: hidden;
+    background-color: rgba(241, 251, 136, 0.664);
+    margin: 10px 120px;
+    height: 600px;
+}
+
+.photos1_1{
+    height: 500px;
+    display: flex;
+}
+
+.photos1 h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.photos1_1_1{
+    width: 50%;
+    margin: 20px 10px 20px 50px;
+}
+
+.photo1{
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo1:hover img{  
+    transform: scale(1.2);  
+}  
+
+.photo2{
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo2:hover img{  
+    transform: scale(1.2);  
+}  
+
+.photo3{
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo3:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photos1_1_2{
+    display: flex;
+    width: 50%;
+    margin: 20px 10px 20px 50px;
+}
+
+.photo4{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo4:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photo5{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo5:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photo6{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo6:hover img{  
+    transform: scale(1.2);  
+} 
+
+/** 旅游 **/
+.photos2{
+    overflow: hidden;
+    background-color: rgba(241, 251, 136, 0.664);
+    margin: 10px 120px;
+    height: 600px;
+}
+
+.photos2_1{
+    height: 500px;
+    display: flex;
+}
+
+.photos2 h2{
+    padding: 5px;
+    text-align: center;
+}
+
+.photos2_1_1{
+    display: flex;
+    width: 65%;
+    margin: 20px 10px 20px 50px;
+}
+
+.photo7{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo7:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photo8{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo8:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photo9{
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo9:hover img{  
+    transform: scale(1.2);  
+} 
+
+.photos2_1_2{
+    width: 40%;
+    margin: 20px 80px 20px 10px;
+}
+
+.photo10{
+    margin-top: 130px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo10:hover img{  
+    transform: scale(1.2);  
+}  
+/* 我的照片区内容结束 */
+
+/* 给我留言内容区 */
+.content4_inner{
+    box-sizing: border-box;
+    padding: 80px 0 0 0;
+    width: 100%;
+    height: 900px;
+    background: black url("../image/给我留言背景.jpg") no-repeat center;
+    background-size: 190%;
+}
+
+.form {
+    position: relative;
+}
+
+/* 采用绝对布局 */
+.submit {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 150px;
+    width: 500px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.form_input {
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputs {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    color: #666;
+    padding-left: 20px;
+}
+
+.form_input span {
+    width: 85px;
+    align-self: center;
+}
+
+.form_comment{
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+}
+
+.form_comment span{
+    width: 85px;
+    align-self: center
+}
+
+.comment_inputs {
+    height: 100px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    color: #666;
+    padding-left: 20px;
+}
+
+.btn_submit {
+    align-self: center;
+}
+
+.btn {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: #999;
+    margin-top: 40px;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+.back {
+    margin-left: 10px;
+}
+
+.home_href {
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FFD204;
+}
+
+.home_href:hover{
+    background: #bb9901;
+}
+/* 给我留言内容区结束 */
+
+/* 提交后报错区 */
+.content5_inner{
+    box-sizing: border-box;
+    padding: 80px 0 0 0;
+    width: 100%;
+    height: 900px;
+    background: black url("../image/给我留言背景.jpg") no-repeat center;
+    background-size: 190%;
+}
+
+.finish {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 200px;
+    width: 800px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.finish_inner{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 20px;
+    color: #0a0200;
+}
+
+.home {
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-top: 100px;
+    color: #fff;
+    border-radius: 5px;
+    background: #FFD204;
+}
+
+.home:hover{
+    background: #bb9901;
+}
+/* 提交后报错区结束 */

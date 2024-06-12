@@ -1,0 +1,25 @@
+	对于导航栏和网页整体框架的布局，采用了左浮动布局，并且设置 width: 100%; 来确保这些元素占满整个容器宽度。
+
+	采用代码中的 #menu 使用了 display: flex; 来实现弹性布局，并通过 justify-content: center; 来实现导航链接的水平居中。
+
+	还有绝对定位布局 .logos 类使用了 position: absolute; 来实现绝对定位，将logo放在网页左上角。
+
+	还使用 text-align: center; 来实现文本的居中对齐。此外，对于弹性布局的元素，使用了 justify-content: center; 来实现水平居中。
+
+	个人简历的网页中table 标签的样式使用了 margin: 0 auto; 来实现表格的水平居中。这是通过设置左右边距为自动（auto），使左右两边留出相等的空间，从而实现居中。th 和 td 标签的样式设置了 text-align: center; 来使表格的头部和单元格内容居中显示，同时定义了 height: 40px; 来统一每个单元格的高度。
+
+	我的爱好和我的照片两个网页都使用了flex弹性布局，.anime_list 和 .photos1_1, .photos1_1_2, .photos2_1, .photos2_1_1 类使用了 display: flex; 来实现弹性布局，这使得子元素可以在父容器内灵活排列。.anime_list 和 .photos1, .photos2 类使用了 overflow: hidden; 来确保内容不会超出元素边界。
+
+	我的爱好网页中用在.r_w_list p a 类使用了 text-decoration: none; 来移除链接的下划线，并通过悬停状态改变颜色。
+
+	我的照片网页中.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7, .photo8, .photo9, .photo10 类使用了 :hover 伪类和 transform 属性来实现鼠标悬停时的缩放效果。
+	
+	给我留言网页中.submit 类使用了 position: absolute; 来相对于其最近的已定位祖先元素定位。top, right, bottom, left 属性与 margin: auto; 结合使用，将 .submit 居中显示。.submit 类使用了 display: flex; 和 flex-direction: column; 来实现内部元素的垂直排列。.btn 和 .home_href 类使用了 :hover 伪类来改变鼠标悬停时的背景颜色。
+	
+	给我留言网页使用了表单输入样式form，.inputs 和 .comment_inputs 类定义了输入框的尺寸、边框、背景颜色和内边距。
+
+	给我留言网页使用了自适应布局.form_input span 和 .form_comment span 使用了 align-self: center; 来在交叉轴上居中对齐。
+
+	提交后报错网页和给我留言网页使用的是相差不大的代码，不做说明，因为给我留言网页是用来展示表单的使用的，所以这个网页是在没有后端API收集数据的情况下建立的。	
+
+	每个网页都使用了盒模型布局，还有内外边距padding，margin等来调整元素内部和元素之间的空间。
